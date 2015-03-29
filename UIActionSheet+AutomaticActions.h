@@ -1,5 +1,5 @@
 //
-//  UIActionSheet+Additions.h
+//  UIActionSheet+AutomaticActions.h
 //  Test
 //
 //  Created by Jorge Luis Mendez on 2/13/15.

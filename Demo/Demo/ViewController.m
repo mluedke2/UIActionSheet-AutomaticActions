@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <objc/runtime.h>
-#import "UIActionSheet+Additions.h"
+#import "UIActionSheet+AutomaticActions.h"
 
 @interface ViewController () <UIActionSheetDelegate>
 @end

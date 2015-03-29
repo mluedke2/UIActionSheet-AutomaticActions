@@ -1,12 +1,12 @@
 //
-//  UIActionSheet+Additions.m
+//  UIActionSheet+AutomaticActions.m
 //  Test
 //
 //  Created by Jorge Luis Mendez on 2/13/15.
 //  Copyright (c) 2015 Jorge Luis Mendez. All rights reserved.
 //
 
-#import "UIActionSheet+Additions.h"
+#import "UIActionSheet+AutomaticActions.h"
 #import <objc/runtime.h>
 
 static void *kAOActionSheetItems = "kAOActionSheetItems";

@@ -14,7 +14,7 @@
 		CF8BE5CA1AC8932D00AB7560 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8BE5C91AC8932D00AB7560 /* Images.xcassets */; };
 		CF8BE5CD1AC8932D00AB7560 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8BE5CB1AC8932D00AB7560 /* LaunchScreen.xib */; };
 		CF8BE5D91AC8932D00AB7560 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8BE5D81AC8932D00AB7560 /* DemoTests.m */; };
-		CF8BE5E41AC893E200AB7560 /* UIActionSheet+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8BE5E31AC893E200AB7560 /* UIActionSheet+Additions.m */; };
+		CF8BE5E41AC893E200AB7560 /* UIActionSheet+AutomaticActions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8BE5E31AC893E200AB7560 /* UIActionSheet+AutomaticActions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		CF8BE5D21AC8932D00AB7560 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8BE5D71AC8932D00AB7560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF8BE5D81AC8932D00AB7560 /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
-		CF8BE5E21AC893E200AB7560 /* UIActionSheet+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+Additions.h"; path = "../../UIActionSheet+Additions.h"; sourceTree = "<group>"; };
-		CF8BE5E31AC893E200AB7560 /* UIActionSheet+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+Additions.m"; path = "../../UIActionSheet+Additions.m"; sourceTree = "<group>"; };
+		CF8BE5E21AC893E200AB7560 /* UIActionSheet+AutomaticActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+AutomaticActions.h"; path = "../../UIActionSheet+AutomaticActions.h"; sourceTree = "<group>"; };
+		CF8BE5E31AC893E200AB7560 /* UIActionSheet+AutomaticActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+AutomaticActions.m"; path = "../../UIActionSheet+AutomaticActions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 				CF8BE5C11AC8932D00AB7560 /* AppDelegate.m */,
 				CF8BE5C31AC8932D00AB7560 /* ViewController.h */,
 				CF8BE5C41AC8932D00AB7560 /* ViewController.m */,
-				CF8BE5E21AC893E200AB7560 /* UIActionSheet+Additions.h */,
-				CF8BE5E31AC893E200AB7560 /* UIActionSheet+Additions.m */,
+				CF8BE5E21AC893E200AB7560 /* UIActionSheet+AutomaticActions.h */,
+				CF8BE5E31AC893E200AB7560 /* UIActionSheet+AutomaticActions.m */,
 				CF8BE5C61AC8932D00AB7560 /* Main.storyboard */,
 				CF8BE5C91AC8932D00AB7560 /* Images.xcassets */,
 				CF8BE5CB1AC8932D00AB7560 /* LaunchScreen.xib */,
@@ -227,7 +227,7 @@
 				CF8BE5C51AC8932D00AB7560 /* ViewController.m in Sources */,
 				CF8BE5C21AC8932D00AB7560 /* AppDelegate.m in Sources */,
 				CF8BE5BF1AC8932D00AB7560 /* main.m in Sources */,
-				CF8BE5E41AC893E200AB7560 /* UIActionSheet+Additions.m in Sources */,
+				CF8BE5E41AC893E200AB7560 /* UIActionSheet+AutomaticActions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
