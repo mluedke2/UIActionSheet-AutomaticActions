@@ -1,9 +1,9 @@
-# UIActionSheet-AutomaticActions
+# UIActionSheet+AutomaticActions
 Experimental UIActionSheet category that always invokes the correct action.
 
 ##Usage
 
-Create and array of `actions`. Each `action` is represented as a `NSDictionary` object in the form: `@{ NSString : selector as NSString }`. 
+Create and array of `actions`. Each `action` is represented as a `NSDictionary` object in the form: `@{ NSString : selector as NSString }`.
 
 ```objc
 NSArray *actionSheetItems = @[ @{ @"Action 1" : NSStringFromSelector(@selector(sheet1Action1)) },
