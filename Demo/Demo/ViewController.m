@@ -11,12 +11,6 @@
 #import "UIActionSheet+Additions.h"
 
 @interface ViewController () <UIActionSheetDelegate>
-
-/*
- *  An array used as the data structure for action sheets.
- */
-//@property (nonatomic, strong) NSArray *actionSheetItems;
-
 @end
 
 @implementation ViewController
@@ -29,30 +23,30 @@
 
 - (IBAction)showActionSheetOne:(id)sender
 {
-    NSArray *actionSheetItems = @[ @{ NSLocalizedString(@"Sheet 1 - action 1", nil) : NSStringFromSelector(@selector(sheet1Action1)) },
-                                   @{ NSLocalizedString(@"Sheet 1 - action 2", nil) : NSStringFromSelector(@selector(sheet1Action2)) },
-                                   @{ NSLocalizedString(@"Sheet 1 - action 3", nil) : NSStringFromSelector(@selector(sheet1Action3)) },
-                                   @{ NSLocalizedString(@"Cancel", nil) : [NSNull null] } ];
+    NSArray *actionSheetItems = @[ @{ @"Sheet 1 - action 1" : NSStringFromSelector(@selector(sheet1Action1)) },
+                                   @{ @"Sheet 1 - action 2" : NSStringFromSelector(@selector(sheet1Action2)) },
+                                   @{ @"Sheet 1 - action 3" : NSStringFromSelector(@selector(sheet1Action3)) },
+                                   @{ @"Cancel" : [NSNull null] } ];
     [self showActionSheetWithItems:actionSheetItems];
 }
 
 - (IBAction)showActionSheetTwo:(id)sender
 {
 
-    NSArray *actionSheetItems = [@[ @{ NSLocalizedString(@"Sheet 2 - action 1", nil) : NSStringFromSelector(@selector(sheet2Action1)) },
-                                    @{ NSLocalizedString(@"Sheet 2 - action 2", nil) : NSStringFromSelector(@selector(sheet2Action2)) },
-                                    @{ NSLocalizedString(@"Cancel", nil) : [NSNull null] } ] mutableCopy];
+    NSArray *actionSheetItems = @[ @{ @"Sheet 2 - action 1" : NSStringFromSelector(@selector(sheet2Action1)) },
+                                   @{ @"Sheet 2 - action 2" : NSStringFromSelector(@selector(sheet2Action2)) },
+                                   @{ @"Cancel" : [NSNull null] } ];
     [self showActionSheetWithItems:actionSheetItems];
 }
 
 - (IBAction)showActionSheetThree:(id)sender
 {
 
-    NSArray *actionSheetItems = [@[ @{ NSLocalizedString(@"Sheet 3 - action 1", nil) : NSStringFromSelector(@selector(sheet3Action1)) },
-                                    @{ NSLocalizedString(@"Sheet 3 - action 2", nil) : NSStringFromSelector(@selector(sheet3Action2)) },
-                                    @{ NSLocalizedString(@"Sheet 3 - action 3", nil) : NSStringFromSelector(@selector(sheet3Action3)) },
-                                    @{ NSLocalizedString(@"Sheet 3 - action 4", nil) : NSStringFromSelector(@selector(sheet3Action4)) },
-                                    @{ NSLocalizedString(@"Cancel", nil) : [NSNull null] } ] mutableCopy];
+    NSArray *actionSheetItems = @[ @{ @"Sheet 3 - action 1" : NSStringFromSelector(@selector(sheet3Action1)) },
+                                   @{ @"Sheet 3 - action 2" : NSStringFromSelector(@selector(sheet3Action2)) },
+                                   @{ @"Sheet 3 - action 3" : NSStringFromSelector(@selector(sheet3Action3)) },
+                                   @{ @"Sheet 3 - action 4" : NSStringFromSelector(@selector(sheet3Action4)) },
+                                   @{ @"Cancel" : [NSNull null] } ];
     [self showActionSheetWithItems:actionSheetItems];
 }
 
