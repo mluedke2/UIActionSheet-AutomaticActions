@@ -1,5 +1,5 @@
 # UIActionSheet+AutomaticActions
-Experimental UIActionSheet category that always invokes the correct action.
+Experimental UIActionSheet category that always invokes the correct action. See my [personal blog](http://jlmendezbonini.com/2015/03/25/UIActionSheet+AutomaticActions.html) for detailed description of the implementation.
 
 ##Usage
 
