@@ -11,6 +11,6 @@
 @interface UIActionSheet (AutomaticActions)
 
 - (instancetype)initWithItems:(NSArray *)items
-                     delegate:(id<UIActionSheetDelegate>)delegate;
+                     delegate:(id)delegate;
 
 @end

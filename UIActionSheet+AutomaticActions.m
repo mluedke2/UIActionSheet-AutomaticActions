@@ -20,18 +20,14 @@ static void *kAOActionSheetDelegate = "kAOActionSheetDelegate";
 - (instancetype)initWithItems:(NSArray *)items
                      delegate:(id<UIActionSheetDelegate>)delegate
 {
-    UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:nil
-                                                    delegate:nil
-                                           cancelButtonTitle:nil
-                                      destructiveButtonTitle:nil
-                                           otherButtonTitles:nil];
+    UIActionSheet *as = [[UIActionSheet alloc] init];
     as.delegate = as;
 
     for (NSDictionary *sheetItem in items) {
         NSString *title = [[sheetItem allKeys] firstObject];
         [as addButtonWithTitle:title];
     }
-    as.cancelButtonIndex = [items count] - 1;
+    as.cancelButtonIndex = items.count - 1;
 
     objc_setAssociatedObject(as,
                              kAOActionSheetItems,
@@ -58,6 +54,7 @@ static void *kAOActionSheetDelegate = "kAOActionSheetDelegate";
     if (![selectorString isEqual:[NSNull null]]) {
         SEL selector = NSSelectorFromString(selectorString);
         if (selector) {
+//http://stackoverflow.com/a/7933931/546719
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
             [delegate performSelector:selector];
