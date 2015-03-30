@@ -10,7 +10,7 @@
 
 @interface UIActionSheet (AutomaticActions)
 
-- (instancetype)initWithItems:(NSArray *)items
-                     delegate:(id)delegate;
+- (instancetype)jlm_initWithItems:(NSArray *)items
+                         delegate:(id)delegate;
 
 @end

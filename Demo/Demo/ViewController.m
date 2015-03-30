@@ -16,7 +16,7 @@
 
 - (void)showActionSheetWithItems:(NSArray *)items
 {
-    UIActionSheet *as = [[UIActionSheet alloc] initWithItems:items delegate:self];
+    UIActionSheet *as = [[UIActionSheet alloc] jlm_initWithItems:items delegate:self];
     [as showInView:self.view];
 }
 

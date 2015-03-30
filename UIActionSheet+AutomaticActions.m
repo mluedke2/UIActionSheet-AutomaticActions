@@ -17,8 +17,8 @@ static void *kAOActionSheetDelegate = "kAOActionSheetDelegate";
 
 @implementation UIActionSheet (AutomaticActions)
 
-- (instancetype)initWithItems:(NSArray *)items
-                     delegate:(id<UIActionSheetDelegate>)delegate
+- (instancetype)jlm_initWithItems:(NSArray *)items
+                         delegate:(id)delegate
 {
     UIActionSheet *as = [[UIActionSheet alloc] init];
     as.delegate = as;
