@@ -24,7 +24,7 @@ NSArray *actionSheetItems = @[ @{ @"Action 1" : NSStringFromSelector(@selector(s
 Instantiate an `UIActionSheet` using `-initWithItems:delegate` and show as usual.
 
 ```objc
-UIActionSheet *as = [[UIActionSheet alloc] initWithItems:items delegate:self];
+UIActionSheet *as = [[UIActionSheet alloc] jlm_initWithItems:items delegate:self];
 [as showInView:self.view];
 ```
 
