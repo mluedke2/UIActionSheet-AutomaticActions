@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "UIActionSheet+AutomaticActions.h"
 
-@interface ViewController () <UIActionSheetDelegate>
+@interface ViewController ()
 @end
 
 @implementation ViewController
